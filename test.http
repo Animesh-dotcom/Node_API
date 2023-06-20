@@ -1,0 +1,28 @@
+### GET ALL PRODUCTS
+
+GET http://localhost:4000/api/products HTTP/1.1
+
+### ADD ITEM
+
+POST http://localhost:4000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"true",
+    "price":"200000"
+}
+
+###GET SINGLE PRODUCT
+GET http://localhost:4000/api/products/64915bc7bcf8f03c9301dd36 HTTP/1.1
+
+###UPDATE SINGLE PRODUCT
+PUT http://localhost:4000/api/products/64915bc7bcf8f03c9301dd36 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"Samsung2",
+    "price":"100000"
+}
+
+###DELETE ITEM
+DELETE http://localhost:4000/api/products/64915c6cbcf8f03c9301dd38 HTTP/1.1
